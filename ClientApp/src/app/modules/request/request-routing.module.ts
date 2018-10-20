@@ -7,20 +7,25 @@ import { RequestCreateComponent } from "./request-create/request-create.componen
 const routes: Routes = [
   {
     path: "",
-    component: RequestComponent
-  },
-  {
-    path: "create",
-    component: RequestCreateComponent
-  },
-  {
-    path: "approve",
-    component: RequestApproveComponent
-  },
+    component: RequestComponent,
+    data: { title: "Request" },
+    children: [
+      {
+        path: "create",
+        component: RequestCreateComponent,
+        data: { title: "Request - Create " }
+      },
+      {
+        path: "approve",
+        component: RequestApproveComponent,
+        data: { title: "Request - Approve" }
+      }
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class RequestRoutingModule { }
+export class RequestRoutingModule {}
