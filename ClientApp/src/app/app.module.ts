@@ -1,8 +1,11 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppComponent } from './app.component';
-import { AnnouncementListComponent } from './components/announcement-list/announcement-list.component';
+import { AppRoutingModule } from "./app-routing.module";
+
+import { AppComponent } from "./app.component";
+import { AnnouncementListComponent } from "./components/announcement-list/announcement-list.component";
+
 
 @NgModule({
   declarations: [
@@ -10,7 +13,8 @@ import { AnnouncementListComponent } from './components/announcement-list/announ
     AnnouncementListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

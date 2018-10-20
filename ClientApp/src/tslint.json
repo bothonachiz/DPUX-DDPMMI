@@ -7,6 +7,11 @@
             "app",
             "camelCase"
         ],
+        "quotemark":[
+            true,
+            "double",
+            "jsx-double"
+        ],
         "component-selector": [
             true,
             "element",

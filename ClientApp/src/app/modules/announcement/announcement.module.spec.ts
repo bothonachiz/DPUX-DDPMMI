@@ -1,13 +1,13 @@
-import { AnnouncementModule } from './announcement.module';
+import { AnnouncementModule } from "./announcement.module";
 
-describe('AnnouncementModule', () => {
+describe("AnnouncementModule", () => {
   let announcementModule: AnnouncementModule;
 
   beforeEach(() => {
     announcementModule = new AnnouncementModule();
   });
 
-  it('should create an instance', () => {
+  it("should create an instance", () => {
     expect(announcementModule).toBeTruthy();
   });
 });
