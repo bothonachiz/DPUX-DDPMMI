@@ -1,2 +1,2 @@
 # DPUX-DDPMMI
-This project's demo version
+This project's test case of dupx-blockchain
