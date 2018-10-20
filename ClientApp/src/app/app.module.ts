@@ -1,22 +1,23 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 
+import { MatToolbarModule } from "@angular/material";
+
 import { AppRoutingModule } from "./app-routing.module";
 
 import { AppComponent } from "./app.component";
 import { AnnouncementListComponent } from "./components/announcement-list/announcement-list.component";
-
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AnnouncementListComponent
-  ],
+  declarations: [AppComponent, AnnouncementListComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
