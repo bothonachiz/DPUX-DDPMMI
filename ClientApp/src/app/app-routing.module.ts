@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
-import { AnnouncementModule } from "./modules/announcement/announcement.module";
-import { RequestModule } from "./modules/request/request.module";
+import { AnnouncementModule } from "./components/announcement/announcement.module";
+import { RequestModule } from "./components/request/request.module";
 
 const routes: Routes = [
   {

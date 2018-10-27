@@ -1,0 +1,17 @@
+.announce-list {
+    min-height: 314px;
+  }
+  
+  .announce-list>span.header {
+    font-weight: 500;
+    color: #757575;
+  }
+  
+  .header-box {
+    margin-bottom: 24px;
+  }
+  
+  .customize-list {
+    padding: 0px;
+  }
+  

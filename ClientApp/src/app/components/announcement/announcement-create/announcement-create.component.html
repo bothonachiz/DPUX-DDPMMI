@@ -1,0 +1,63 @@
+<form class="example-form">
+
+  <div class="content-route">
+    <div class="row page-layout">
+      <div class="col">
+        <div class="row input-text-content">
+          <div class="col">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Title">
+            </mat-form-field>
+          </div>
+          <div class="col second-col">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Sub-District">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row input-text-content">
+          <div class="col">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Province">
+            </mat-form-field>
+          </div>
+          <div class="col second-col">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="District">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row input-text-content">
+          <div class="col">
+            <mat-form-field class="example-full-width">
+              <input matInput placeholder="Detail">
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row input-text-content">
+          <div class="col">
+            <mat-form-field>
+              <input matInput [matDatepicker]="startDate" placeholder="Start Date (dd/mm/yyyy)">
+              <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+              <mat-datepicker #startDate></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="col second-col">
+            <mat-form-field>
+              <input matInput [matDatepicker]="endDate" placeholder="End Date (dd/mm/yyyy)">
+              <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+              <mat-datepicker #endDate></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row input-text-content">
+          <button color="accent" mat-raised-button>Announce</button>
+        </div>
+      </div>
+      <div class="col">
+        <app-announcement-list></app-announcement-list>
+      </div>
+    </div>
+  </div>
+
+</form>

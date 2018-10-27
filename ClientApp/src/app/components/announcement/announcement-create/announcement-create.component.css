@@ -1,0 +1,37 @@
+.content-route {
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.content-route>.row {
+  width: 100%;
+}
+
+.content-route>.row>.col:first-child {
+  width: 66%;
+}
+
+.content-route>.row>.col:last-child {
+  width: 33%;
+}
+
+.input-text-content>.col {
+  width: 100%;
+}
+
+.input-text-content>.col>mat-form-field {
+  width: 100%;
+}
+
+.page-layout>.col:not(:last-child) {
+  margin-right: 32px;
+}
+
+.second-col {
+  margin-left: 32px;
+}
